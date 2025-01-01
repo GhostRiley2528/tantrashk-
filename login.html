@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to तन्त्रांश and access cutting-edge solutions to streamline your business processes.">
+    <meta name="keywords" content="Login, Solutions, Technology, Business">
+    <meta name="author" content="Your Name or Company">
+    <title>Login - तन्त्रांश</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Reset margin and padding for body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Custom Styles */
+        body {
+            background-color: #ffffff; /* Light background */
+            font-family: 'Arial', sans-serif;
+            padding-top: 70px; /* Adjust this value based on navbar height */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar {
+            background-color: #58a9ff93; /* Blue navbar */
+            position: fixed; /* Fix navbar to the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Ensure it stays on top */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #ffc107 !important; /* Golden color on hover */
+        }
+
+        .login-form {
+            background-color: #ffffff; /* White background */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-form h2 {
+            color: #007bff; /* Dark blue text for header */
+        }
+
+        .login-form .form-label {
+            color: #333;
+        }
+
+        .login-form .btn {
+            background-color: #007bff; /* Blue button color */
+            color: white;
+            border: none;
+        }
+
+        .login-form .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            color: white;
+        }
+
+        footer {
+            background-color: #007bff; /* Blue background for footer */
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 0; /* Remove extra margin between sections */
+            transition: background-color 0.3s ease;
+        }
+
+        footer a {
+            color: #ffc107; /* Golden color for footer links */
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-mode .navbar {
+            background-color: #444;
+        }
+
+        .dark-mode .login-form {
+            background-color: #555;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode footer {
+            background-color: #444;
+        }
+
+        /* Preloader styles */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* Position the dark mode toggle button and "Try Starter Suite" button correctly */
+        #darkModeToggle {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 1050;
+        }
+
+        .cta-btn {
+            position: relative;
+            z-index: 1040;
+        }
+
+        .cta-btn-wrapper {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <img src="तन्त्रांश.png" alt="तन्त्रांश Logo" style="height: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solution.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="industry">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resource">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="cta-btn-wrapper">
+                    <a href="#" class="btn cta-btn">Try तन्त्रांश Starter Suite  </a> <br>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 login-form">
+                    <h2 class="text-center mb-4">Login to तन्त्रांश</h2>
+                    <p class="text-center mb-4">Welcome back! Please enter your credentials to access your account and continue using our innovative solutions.</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="mt-3 text-center">
+                        <p>Don't have an account? <a href="#">Sign up here</a></p>
+                        <p><a href="#">Forgot your password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="info-section py-5 bg-light">
+        <div class="container text-center">
+            <h3>Why Choose तन्त्रांश?</h3>
+            <p>At तन्त्रांश, we provide cutting-edge solutions tailored to your business needs. Our platform helps businesses streamline processes, enhance productivity, and achieve new milestones in innovation. Join us today and experience seamless integration and exceptional customer service.</p>
+            <p>Already have an account? Log in above and start exploring!</p>
+        </div>
+    </section>
+
+    <!-- Security Tips Section -->
+    <section class="security-tips py-5">
+        <div class="container text-center">
+            <h3>Security Tips</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Always use a strong and unique password for your account.</li>
+                <li class="list-group-item">Enable two-factor authentication for added security.</li>
+                <li class="list-group-item">Avoid using public Wi-Fi networks while logging in.</li>
+                <li class="list-group-item">Regularly change your password to enhance account security.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- User Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container text-center">
+            <h3>User Testimonials</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"तन्त्रांश has revolutionized our business operations. Their solutions are both intuitive and powerful!"</p>
+                        <footer class="blockquote-footer text-white">John Doe, <cite title="Source Title">CEO, Tech Innovations</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"The support team at तन्त्रांश is incredible. They always go above and beyond to solve any issues."</p>
+                        <footer class="blockquote-footer text-white">Jane Smith, <cite title="Source Title">Marketing Director, Global Corp</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"We’ve seen amazing growth since we started using तन्त्रांश solutions. Highly recommend!"</p>
+                        <footer class="blockquote-footer text-white">Michael Johnson, <cite title="Source Title">Operations Manager, Smart Tech</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 तन्त्रांश. All rights reserved.</p>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="btn btn-secondary">
+        <i class="fas fa-moon"></i> Toggle Dark Mode
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0zOe8t3y71y8lfg9Fp53yPq5bA0W+aJh0Z3prZCjv2u1KczX" crossorigin="anonymous"></script>
+    <script>
+        // Dark Mode Toggle
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Hide preloader after page load
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

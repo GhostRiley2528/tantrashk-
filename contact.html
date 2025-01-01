@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - तन्त्रांश</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Reset margin and padding for body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Custom Styles */
+        body {
+            background-color: #ffffff; /* Light blue background */
+            font-family: 'Arial', sans-serif;
+            padding-top: 70px; /* Adjust this value based on navbar height */
+        }
+
+        .navbar {
+            background-color: #58a9ff93; /* Blue navbar */
+            position: fixed; /* Fix navbar to the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Ensure it stays on top */
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #ffc107 !important; /* Golden color on hover */
+        }
+
+        .cta-btn {
+            background-color: #007bff; /* Blue button color */
+            color: #ffffff;
+            border: none;
+        }
+
+        .cta-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            color: #ffffff;
+        }
+
+        .contact-us {
+            background-color: #ffffff; /* Light blue background for contact section */
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+
+        .contact-us h2 {
+            color: #007bff; /* Dark blue text for header */
+        }
+
+        .contact-us p {
+            color: #333;
+        }
+
+        .contact-us .btn {
+            background-color: #007bff; /* Blue color for form buttons */
+            color: white;
+        }
+
+        .contact-us .btn:hover {
+            background-color: #0056b3; /* Darker blue for hover effect */
+        }
+
+        .map-section {
+            background-color: #ffffff; /* Light grey background for the map section */
+            padding: 50px 0;
+        }
+
+        .map-section iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+        }
+
+        .social-media-section {
+            background-color: #396189; /* Dark background for social media section */
+            color: #fff;
+            padding: 30px 0;
+            margin-bottom: 0; /* Remove extra margin */
+        }
+
+        .social-media-section a {
+            color: #fff;
+        }
+
+        .social-media-section .btn {
+            background-color: #17a2b8; /* Light blue for social media buttons */
+            border: none;
+        }
+
+        .social-media-section .btn:hover {
+            background-color: #117a8b; /* Darker blue for hover effect */
+        }
+
+        footer {
+            background-color: #007bff; /* Blue background for footer */
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 0; /* Remove extra margin between sections */
+        }
+
+        footer a {
+            color: #ffc107; /* Golden color for footer links */
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+        /* Social Media Button Hover Styles */
+.social-media-section .btn-facebook:hover {
+    color: #1877f2; /* Facebook blue color */
+}
+
+.social-media-section .btn-x:hover {
+    color: #000000; /* X (formerly Twitter) light blue color */
+}
+
+.social-media-section .btn-youtube:hover {
+    color: #ff0000; /* YouTube red color */
+}
+
+.social-media-section .btn-linkedin:hover {
+    color: #0e76a8; /* LinkedIn blue color */
+}
+
+/* You can also adjust the background color or border if necessary */
+.social-media-section .btn:hover {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <img src="तन्त्रांश.png" alt="तन्त्रांश Logo" style="height: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solution.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="industry">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resource">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn cta-btn">Try तन्त्रांश Starter Suite</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <p class="text-center mb-5">
+                If you have any questions, suggestions, or need assistance, our team is here to help! We are dedicated to providing exceptional support and ensuring that all of your inquiries are addressed in a timely and professional manner. 
+                Whether you want to learn more about our solutions, need help with an existing project, or are looking for specific information, feel free to reach out through the form or contact details below. We're always happy to assist you.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Contact Form -->
+                    <h4>Send Us a Message</h4>
+                    <p>Fill out the form below to get in touch with us directly. One of our team members will get back to you as soon as possible.</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn cta-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <!-- Contact Information -->
+                    <h4>Our Address</h4>
+                    <p>
+                        <strong>तन्त्रांश</strong><br>
+                        1234 Digital Road<br>
+                        Innovation City, IN 12345<br>
+                        India
+                    </p>
+                    <h4>Phone</h4>
+                    <p>If you prefer to speak with someone directly, you can reach us by phone. Our team is available to assist you during business hours (9 AM - 6 PM, Monday to Friday).</p>
+                    <p><strong>+91 123 456 7890</strong></p>
+                    <h4>Email</h4>
+                    <p>For any inquiries or support needs, you can email us at the following address. We strive to respond within 24 hours:</p>
+                    <p><strong>support@tantransh.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Find Us Here</h2>
+            <p class="text-center mb-4">If you're planning to visit us, you can use the map below to find our office location. We welcome visitors and look forward to meeting you!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=Innovation%20City%2C%20IN%2012345%2C%20India&key=YOUR_GOOGLE_MAP_API_KEY" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Social Media Section -->
+<section class="social-media-section py-5 mb-0">
+    <div class="container text-center">
+        <h3>Follow Us</h3>
+        <p>Stay connected with us on social media for the latest updates, offers, and more. We share industry insights, new product releases, and much more!</p>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-primary mx-2 btn-facebook">Facebook</a>
+            <a href="#" class="btn btn-info mx-2 btn-x">X</a>
+            <a href="#" class="btn btn-danger mx-2 btn-youtube">YouTube</a>
+            <a href="#" class="btn btn-dark mx-2 btn-linkedin">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mb-0"> <!-- Adjusted mb-0 to remove margin-bottom -->
+        <p>&copy; 2024 तन्त्रांश. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-lpii36XjJGsBSxtHq5G+XGzHYIuNjtvLpAt5tED1PIevA7pqeOT3UmoQI3QJ5iF7" crossorigin="anonymous"></script>
+</body>
+</html>

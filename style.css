@@ -1,221 +1,156 @@
+/* Global Styles */
 body {
     font-family: 'DM Mono', monospace;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f4f8;
+    background-color: #F5F5F5; /* Cool White for body */
     color: #333;
-    text-align: center;
 }
 
-/* Header (Navbar on the top) */
+/* Navbar */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white; /* Dark Blue */
-    z-index: 10;
+    background-color: #FFFFFF; /* White background for navbar */
 }
 
-.navbar img {
-    width: 120px; /* Logo fit properly */
-    height: auto;
-}
-
-.navbar-nav .nav-link {
-    color: #0070d2 !important; /* Blue text */
+.navbar .navbar-nav .nav-link {
+    color: #0D47A1 !important; /* Deep Blue for navbar text */
     font-size: 16px;
     padding: 10px 15px;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
     text-decoration: underline;
-    color: #005bb5;
+    color: #005bb5; /* Darker Blue on hover */
 }
 
-/* Smaller and text-fitting button */
 .cta-btn {
-    background-color: #0070d2;
+    background-color: #0D47A1; /* Deep Blue for CTA button */
     color: white;
     border-radius: 20px;
-    padding: 6px 12px; /* Reduced padding for smaller size */
-    font-size: 14px; /* Adjusted font size */
+    padding: 6px 12px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
-    width: auto;
-    display: inline-block;
 }
 
 .cta-btn:hover {
-    background-color: #005bb5;
+    background-color: #005bb5; /* Darker blue on hover */
 }
 
-/* Content area */
-.content {
-    margin-top: 80px; /* Add margin to avoid overlap with fixed navbar */
-    padding: 20px;
-    width: 100%;
-    background-color: #f4f6f9;
-}
-
-/* Mini header */
+/* Mini Header */
 .mini-header {
-    background-color: #0d3984; /* Light Blue */
+    background-color: #0D47A1; /* Deep Blue */
+    color: white; /* White text */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
 }
 
-.mini-header h2 {
-    color: white; /* White text for the header */
+.mini-header h2, .mini-header p {
+    color: white;
 }
 
-.mini-header p {
-    color: white; /* White text for the paragraph */
-    font-size: 1.1em;
-}
-
+/* Hero Section */
 .hero {
     padding: 80px 20px;
     background: url('hero-background.jpg') no-repeat center center / cover;
-    color: #0070d2; /* Blue text */
+    color: #0D47A1; /* Deep Blue for text */
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Features Section (Card Styling) */
-.card-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: #ffffff;
+/* Features Section */
+.features .card {
+    background: #FFFFFF; /* White for card background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.features .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-body {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-
-.card-text {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.card-footer {
-    background-color: #f1f1f1;
+.features .card-footer {
+    background-color: #FFB300; /* Saffron Yellow for footer */
     padding: 10px;
     text-align: center;
 }
 
-.card-footer a {
-    color: #0070d2;
-    text-decoration: none;
+.features a {
+    color: #0D47A1; /* Deep Blue for links */
 }
 
-.card-footer a:hover {
+.features a:hover {
     text-decoration: underline;
 }
 
+/* Learn Section */
+.learn-section .learn-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-section .learn-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.learn-section .btn-link {
+    color: #0D47A1; /* Deep Blue for links in cards */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.learn-section .btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Help Section */
 .help-card {
     background-image: url('https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29372.jpg');
     background-size: cover;
     background-position: center;
-    padding: 50px 30px; /* Increased padding for more height */
+    padding: 50px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px 0;
-    color: white; /* Ensure text is visible on the image */
-    height: 400px; /* Set a fixed height */
+    color: white;
 }
 
-.help-card h2 {
-    color: #ffffff;
-    margin-bottom: 10px;
+.help-card h2, .help-card p {
+    color: white;
 }
 
-.help-card p {
-    color: #ffffff;
-    font-size: 1.1em;
-}
-
-/* Footer Customization */
+/* Footer */
 footer {
-    background-color: #ffffff; /* Make the footer white */
-    color: #333; /* Dark text for visibility */
+    background-color: #FFFFFF; /* White background for footer */
+    color: #333;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
 footer a {
-    color: #0070d2;
+    color: #0D47A1; /* Deep Blue for footer links */
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
-/* Learn Section Cards */
-.learn-card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensures equal card height */
+/* Add custom styles for navbar to fix it at the top */
+.navbar {
+    top: 0;
+    width: 100%;
 }
 
-.learn-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Button Styling */
-.learn-card .btn-link {
-    color: #0070d2;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.learn-card .btn-link:hover {
-    text-decoration: underline;
+/* Ensure the body content is not hidden behind the navbar */
+body {
+    padding-top: 80px; /* Adjust this value based on your navbar's height */
 }
